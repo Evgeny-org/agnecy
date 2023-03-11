@@ -1,0 +1,53 @@
+/*
+	f5f0dd - картинки
+	ff2d2d - красный
+	313030 - черный бэк
+	4c4c4c - серый текст
+	e5e5e5 - строка ввода
+	f6f2f2 - бэк блока
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans';
+	font-weight: 400;
+}
+
+.container{
+	max-width: 1600px;
+	margin: 0 auto;
+}
+h1{
+	font-weight: 800;
+	font-size: 60px;
+}
+h2{
+	font-weight: 700;
+	font-size: 42px;
+}
+h3, h4, h5{
+	font-weight: 600;
+}
+h3{
+	font-size: 30px;
+}
+h4{
+	font-size: 24px;
+}
+h5{
+	font-size: 22px;
+}
+p.text1{
+	font-size: 18px;
+	font-weight: 400;
+	font-size: 800;
+}
+p.text2{
+	font-size: 16px;
+	font-size: 400;
+}
+p.text3{
+	font-size: 14px;
+	font-size: 700;
+}
