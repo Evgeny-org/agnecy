@@ -4,7 +4,7 @@
 	313030 - черный бэк
 	4c4c4c - серый текст
 	e5e5e5 - строка ввода
-	f6f2f2 - бэк блока
+	f6f2f2 - бэк блока фото
 */
 
 *{
@@ -26,6 +26,11 @@ h2{
 	font-weight: 700;
 	font-size: 42px;
 }
+h2.title{
+	text-transform: uppercase;
+	margin-bottom: 25px;
+	letter-spacing: 2px;
+}
 h3, h4, h5{
 	font-weight: 600;
 }
@@ -38,16 +43,269 @@ h4{
 h5{
 	font-size: 22px;
 }
-p.text1{
-	font-size: 18px;
+.text1, .text2, .text3{
+	color: #4c4c4c;
+}
+.text1, .text2{
 	font-weight: 400;
-	font-size: 800;
 }
-p.text2{
+.text1{
+	font-size: 18px;
+}
+.text2{
 	font-size: 16px;
-	font-size: 400;
 }
-p.text3{
+p.text2Title{
+	color: #4c4c4c;
+	width: 30%;
+	margin-bottom: 25px;
+}
+.text3{
 	font-size: 14px;
-	font-size: 700;
+	font-weight: 700;
 }
+.button{
+	background-color: #ff2d2d;
+	padding: 20px 75px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	display: inline-block;
+	border-radius: 10px;
+}
+hr.title{
+	width: 10%;
+	height: 2px;
+	background-color: #ff2d2d;
+	margin-bottom: 100px;
+}
+
+header{
+	background-color: #f6f2f2;
+	padding: 250px 0 150px 0;
+	margin-bottom: 150px;
+}
+header nav .container{
+	background-color: #313030;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	z-index: 999;
+}
+header nav .container a{
+	text-decoration: none;
+	color: #fff;
+	padding: 40px 25px;
+}
+header nav .container a:hover{
+	background-color: #ff2d2d;
+}
+header .ourStrong{
+	display: flex;
+}
+header .ourStrong .left,
+header .ourStrong .right{
+	width: 50%;
+}
+header .ourStrong .left h1{
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-bottom: 25px;
+}
+header .ourStrong .left p{
+	width: 60%;
+	line-height: 1.75;
+	margin-bottom: 50px;
+}
+header .ourStrong .right .video{
+	width: 600px;
+	height: 400px;
+	background-color: #f5f0dd;
+	box-shadow: 0 0 100px 0 gray;
+	margin-left: auto;
+	position: relative;
+	cursor: pointer;
+}
+header .ourStrong .right .video img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+header .ourStrong .right .video:hover img{
+	opacity: 1;
+}
+
+main .doYou{
+	margin-bottom: 100px;
+}
+main .doYou .container{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(0, 0, 0, .25);
+	padding-bottom: 50px;
+}
+main .doYou .left,
+main .doYou .right{
+	width: 50%;
+}
+main .doYou .left{
+	padding-right: 200px;
+}
+main .doYou .left h2{
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-bottom: 50px;
+}
+main .doYou .left p{
+	line-height: 1.75;
+	margin-bottom: 50px;
+}
+main .doYou .left .button_2{
+	background-color: rgba(0, 0, 0, 0);
+	color: #ff2d2d;
+	border: 2px solid #ff2d2d;
+}
+main .doYou .right{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+main .doYou .right .block{
+	width: 45%;
+	margin-bottom: 50px;
+}
+main .doYou .right .block img{
+	margin-bottom: 25px;
+}
+main .doYou .right .block h4{
+	margin-bottom: calc(25px / 2);
+}
+main .featureProducts{
+	margin-bottom: 150px;
+}
+main .featureProducts h2.title{
+	text-align: center;
+}
+main .featureProducts p.text2Title{
+	text-align: center;
+	margin: 0 auto 25px auto;
+}
+main .featureProducts hr.title{
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+main .featureProducts ul{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto 50px auto;
+}
+main .featureProducts ul li{
+	list-style: none;
+	font-weight: 700;
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #4c4c4c;
+	cursor: pointer;
+}
+main .featureProducts ul li:first-child{
+	color: #ff2d2d;
+}
+main .featureProducts ul li:hover{
+	color: #ff2d2d;
+}
+main .featureProducts .blocks .line{
+	display: flex;
+	margin-bottom: 25px;
+}
+main .featureProducts .blocks .line:last-child{
+	margin-bottom: 0;
+}
+main .featureProducts .blocks .block{
+	width: 25%;
+	height: 375px;
+	margin: 0 calc(25px / 2);
+	background-color: #f6f2f2;
+}
+main .featureProducts .blocks .line .block:first-child{
+	margin-left: 0;
+}
+main .featureProducts .blocks .line .block:last-child{
+	margin-right: 0;
+}
+main .meetOur .blocks{
+	display: flex;
+	justify-content: space-between;
+}
+main .meetOur .left{
+	width: 30%;
+}
+main .meetOur .left .block{
+	width: 90%;
+	height: 400px;
+	background-color: #f6f2f2;
+}
+main .meetOur .right{
+	width: 65%;
+	display: flex; /*при дбавлении изображений убрать*/
+	flex-direction: column; /*при дбавлении изображений убрать*/
+}
+main .meetOur .right ul{
+	display: flex;
+}
+main .meetOur .right ul li{
+	list-style: none;
+	font-style: italic;
+	color: #4c4c4c;
+	font-size: 20px;
+	margin-right: 25px;
+}
+main .meetOur .right h3{
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+main .meetOur .right p.text2{
+	max-width: 60%;
+	line-height: 2;
+	margin-bottom: 25px;
+}
+main .meetOur .right .blocks{
+	height: 100%; /*при дбавлении изображений убрать*/
+}
+main .meetOur .right .block{
+	width: 23%;
+	background-color: #f6f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
